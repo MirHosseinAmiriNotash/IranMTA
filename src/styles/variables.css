@@ -1,0 +1,23 @@
+:root {
+  --mta-bg: #0b0c0e;
+  --mta-panel-bg: rgba(21, 23, 26, 0.8);
+  --mta-orange: #ff9d00;
+  --mta-blue: #228be6;
+  --mta-green: #40c057;
+  --mta-purple: #7048e8;
+  --mta-border: rgba(255, 255, 255, 0.05);
+
+
+  --mta-radius: 8px;
+  --mta-gap: 16px;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--mta-bg);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+}
+
