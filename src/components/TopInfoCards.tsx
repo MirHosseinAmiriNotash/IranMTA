@@ -1,4 +1,4 @@
-import { Group, Paper, Text, Stack, Box } from '@mantine/core';
+import { Group, Paper, Text, Stack} from '@mantine/core';
 
 export function TopInfoCards() {
   return (
