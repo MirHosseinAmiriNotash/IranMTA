@@ -1,4 +1,4 @@
-import { Tabs, Group, rem } from "@mantine/core";
+import { Tabs, rem } from "@mantine/core";
 import {
   IconHomeFilled,
   IconBasketFilled,
