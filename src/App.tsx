@@ -24,7 +24,7 @@ function App() {
       style={{
         display: "flex",
         flexDirection: "column",
-        overflowY: "auto", 
+        overflowY: "auto",
         overflowX: "hidden",
       }}
     >
