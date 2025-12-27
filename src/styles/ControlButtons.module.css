@@ -1,0 +1,71 @@
+.topControlsWrapper {
+  position: absolute;
+  top: 25px;
+  left: 30px;
+  right: 30px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  z-index: 100;
+}
+
+.controlGroup {
+  display: flex;
+  gap: 12px;
+  pointer-events: auto;
+}
+
+.keyBtn {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 6px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+
+.keyBtn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+.keyBtn:active {
+  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.keyIcon {
+  background: #ffffff;
+  color: #000;
+  font-weight: 900;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 3px;
+  box-shadow: 0 2px 0 #999;
+}
+
+.keyText {
+  color: #eee;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.closeBtn {
+  background: rgba(231, 76, 60, 0.2);
+  border: 1px solid rgba(231, 76, 60, 0.4);
+}
+
+.closeBtn:hover {
+  background: rgba(231, 76, 60, 0.8) !important;
+}
+
+.closeBtn:hover .keyText,
+.closeBtn:hover svg {
+  color: white !important;
+}

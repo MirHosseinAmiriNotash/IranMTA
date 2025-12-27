@@ -1,0 +1,44 @@
+.statsContainer {
+  background: var(--mta-panel-bg);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--mta-border);
+  border-radius: 12px;
+  padding: 32px;
+  margin-top: 20px;
+}
+
+.statLabel {
+  font-size: 10px; 
+  font-weight: 800;
+  color: var(--mta-text-dimmed);
+  letter-spacing: 1px; 
+  text-transform: uppercase;
+}
+
+.statValue {
+  font-size: 12px; 
+  font-weight: 800; 
+  margin-top: 4px;
+}
+
+.divider {
+  height: 2px;
+ background-color: rgba(255, 255, 255, 0.05);
+  margin: 30px 0;
+}
+
+.giftInput {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: var(--mta-border);
+  color: white;
+  font-size: 14px;
+  height: 45px; 
+}
+
+.enterButton {
+  background-color: var(--mta-orange);
+  color: black;
+  font-weight: 900;
+  height: 40px;
+  padding: 0 20px;
+}

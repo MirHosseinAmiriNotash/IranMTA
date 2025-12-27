@@ -1,0 +1,41 @@
+
+.triggerButton {
+  background-color: rgba(255, 157, 0, 0.1) !important;
+  border: 1px solid var(--mta-orange) !important;
+  height: 45px !important;
+  color: var(--mta-orange) !important;
+  font-weight: 700 !important;
+}
+
+
+.modalHeader {
+  background-color: #1a1b1e !important;
+}
+
+.modalBody {
+  background-color: #1a1b1e !important;
+}
+
+.modalContent {
+  border: 1px solid var(--mta-border) !important;
+}
+
+.licenseBox {
+  padding: var(--mantine-spacing-sm);
+  border-radius: 8px;
+  transition: opacity 0.2s ease;
+}
+
+
+.activeBox {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  opacity: 1;
+}
+
+
+.inactiveBox {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid transparent;
+  opacity: 0.6;
+}

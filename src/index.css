@@ -6,13 +6,12 @@
   --mta-orange: #ff9d00;
   --mta-border: rgba(255, 255, 255, 0.07);
   --mta-text-dimmed: #8f9193;
-  --mta-business-cart : #22ee99;
-  --mta-battle-pass-color-normal : #00ffaa7a;
-  --mta-battle-pass-color-select : #00ffaa;
-  --mta-tab-color-hover : #fff;
-  --mta-tab-color-unselected : #8f9193;
-
-
+  --mta-business-cart: #22ee99;
+  --mta-battle-pass-color-normal: #00ffaa7a;
+  --mta-battle-pass-color-select: #00ffaa;
+  --mta-tab-color-hover: #fff;
+  --mta-tab-color-unselected: #8f9193;
+  --mta-level-label-color: rgba(255, 255, 255, 0.7);
 }
 
 body {
@@ -31,12 +30,11 @@ body {
   border-radius: 8px;
 }
 
-
 /* Menu-tabs */
 .mta-tabs-tab {
   background: transparent;
   border: none;
-  color: var(--mta-tab-color-unselected); 
+  color: var(--mta-tab-color-unselected);
   font-weight: 700;
   font-size: 12px;
   cursor: pointer;
@@ -46,38 +44,33 @@ body {
   padding: 8px 12px;
 }
 
-
 .mta-tabs-tab [data-section] {
-  color: inherit; 
+  color: inherit;
 }
-
 
 .mta-tabs-tab[data-active] {
   color: var(--mta-orange) !important;
 }
 
-
 .battlepass {
-    color: var(--mta-battle-pass-color-normal);
+  color: var(--mta-battle-pass-color-normal);
 }
 
-
 .battlepass[data-active] {
-    color: var(--mta-battle-pass-color-select) !important;
+  color: var(--mta-battle-pass-color-select) !important;
 }
 
 .mta-tabs-tab:hover {
-  color: var( --mta-tab-color-hover);
+  color: var(--mta-tab-color-hover);
 }
 
 /* Home & Business Cart */
 
 .card-with-image {
   position: relative;
-  overflow: hidden; 
+  overflow: hidden;
   min-height: 130px;
 }
-
 
 .card-graphic-container {
   position: absolute;
@@ -90,7 +83,6 @@ body {
   justify-content: center;
   pointer-events: none;
 }
-
 
 .glow-effect {
   position: absolute;
@@ -107,9 +99,12 @@ body {
 }
 
 .blue-glow {
-  background: radial-gradient(circle, var(--mta-business-cart) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    var(--mta-business-cart) 0%,
+    transparent 70%
+  );
 }
-
 
 .card-image {
   height: 80%;
@@ -117,11 +112,22 @@ body {
   object-fit: contain;
   z-index: 2;
 
-  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+  filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
   transition: transform 0.3s ease;
 }
 
-
 .card-with-image:hover .card-image {
   transform: scale(1.1) rotate(-5deg);
+}
+
+
+
+
+body {
+
+  zoom: 90%; 
+}
+
+@media (min-width: 2000px) {
+  body { zoom: 120%; } 
 }
