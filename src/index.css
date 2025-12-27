@@ -1,18 +1,24 @@
 @import "@mantine/core/styles.css";
 
 :root {
-  --mta-bg: #0b0c0e;
+  --mta-bg: #0e0f11;
   --mta-panel-bg: rgba(255, 255, 255, 0.03);
   --mta-orange: #ff9d00;
   --mta-border: rgba(255, 255, 255, 0.07);
   --mta-text-dimmed: #8f9193;
+  --mta-business-cart : #22ee99;
+  --mta-battle-pass-color-normal : #00ffaa7a;
+  --mta-battle-pass-color-select : #00ffaa;
+  --mta-tab-color-hover : #fff;
+  --mta-tab-color-unselected : #8f9193;
+
+
 }
 
 body {
   margin: 0;
   background-color: var(--mta-bg);
-  background-image: radial-gradient(circle at center, #1a1c20 0%, #0b0c0e 100%);
-  color: white;
+  color: var(--mta-tab-color-hover);
   font-family: "Segoe UI", Roboto, sans-serif;
   height: 100vh;
   overflow: hidden;
@@ -23,4 +29,99 @@ body {
   backdrop-filter: blur(12px);
   border: 1px solid var(--mta-border);
   border-radius: 8px;
+}
+
+
+/* Menu-tabs */
+.mta-tabs-tab {
+  background: transparent;
+  border: none;
+  color: var(--mta-tab-color-unselected); 
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease;
+  padding: 8px 12px;
+}
+
+
+.mta-tabs-tab [data-section] {
+  color: inherit; 
+}
+
+
+.mta-tabs-tab[data-active] {
+  color: var(--mta-orange) !important;
+}
+
+
+.battlepass {
+    color: var(--mta-battle-pass-color-normal);
+}
+
+
+.battlepass[data-active] {
+    color: var(--mta-battle-pass-color-select) !important;
+}
+
+.mta-tabs-tab:hover {
+  color: var( --mta-tab-color-hover);
+}
+
+/* Home & Business Cart */
+
+.card-with-image {
+  position: relative;
+  overflow: hidden; 
+  min-height: 130px;
+}
+
+
+.card-graphic-container {
+  position: absolute;
+  right: 0px;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+
+.glow-effect {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  filter: blur(40px);
+  opacity: 0.6;
+  z-index: 1;
+}
+
+.orange-glow {
+  background: radial-gradient(circle, var(--mta-orange) 0%, transparent 70%);
+}
+
+.blue-glow {
+  background: radial-gradient(circle, var(--mta-business-cart) 0%, transparent 70%);
+}
+
+
+.card-image {
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+  z-index: 2;
+
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.5));
+  transition: transform 0.3s ease;
+}
+
+
+.card-with-image:hover .card-image {
+  transform: scale(1.1) rotate(-5deg);
 }

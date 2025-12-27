@@ -4,7 +4,7 @@ import { MantineProvider, createTheme } from "@mantine/core";
 import "@mantine/core/styles.css";
 import "./index.css";
 import App from "./App.tsx";
-//import "./styles/variables.css";
+
 
 const theme = createTheme({
   primaryColor: 'orange',
