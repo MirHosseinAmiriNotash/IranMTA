@@ -37,7 +37,7 @@ export function RightPanel() {
 
         <Box className={classes.imageContainer}>
           <Image
-            src="../../public/battlepass.png"
+            src="../../battlepass.png"
             className={classes.bpImage}
           />
         </Box>
