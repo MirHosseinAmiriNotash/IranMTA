@@ -5,7 +5,7 @@ import {
   IconTrophy,
 } from "@tabler/icons-react";
 import classes from "../styles/RightPanel.module.css";
-
+const baseUrl = import.meta.env.BASE_URL;
 export function RightPanel() {
   return (
     <Box className={classes.rightPanelContainer}>
@@ -37,7 +37,7 @@ export function RightPanel() {
 
         <Box className={classes.imageContainer}>
           <Image
-            src="../../public/battlepass.png"
+            src={`${baseUrl}battlepass.png`}
             className={classes.bpImage}
           />
         </Box>

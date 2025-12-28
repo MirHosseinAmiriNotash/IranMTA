@@ -1,5 +1,6 @@
 import { Group, Paper, Text, Stack} from '@mantine/core';
 
+const baseUrl = import.meta.env.BASE_URL;
 export function TopInfoCards() {
   return (
     <Group grow gap="md">
@@ -14,7 +15,7 @@ export function TopInfoCards() {
       
         <div className="card-graphic-container">
            <div className="glow-effect orange-glow"></div>
-           <img src="../../public/home.png" alt="House" className="card-image" />
+           <img src={`${baseUrl}home.png`} alt="House" className="card-image" />
         </div>
       </Paper>
 
@@ -28,7 +29,7 @@ export function TopInfoCards() {
 
         <div className="card-graphic-container">
            <div className="glow-effect blue-glow"></div>
-           <img src="../../public/Business.png" alt="Business" className="card-image" />
+           <img src={`${baseUrl}Business.png`} alt="Business" className="card-image" />
         </div>
       </Paper>
     </Group>
